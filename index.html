@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        .codeArea {
+            width: 100%;
+            height: 100%;
+        }
+        .textAreaWrapper {
+            width: 500px;
+            height: 70vh;
+        }
+        textarea {
+            width: 80%;
+            height: 95%;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .flex-container{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+<table class='codeArea'>
+    <tr>
+        <td>Enter function arguments:</td>
+    </tr>
+    <tr>
+        <table id="argsTable">
+            <tr class='arg'>
+                <td>
+                    <label>Arg name: <input id="name" type="text"></label>
+                </td>
+                <td>
+                    <label>Arg value: <input id="value" type="text"></label>
+                </td>
+            </tr>
+        </table>
+    </tr>
+    <tr>
+        <button id="addArg">Add function argument</button>
+    </tr>
+</table>
+<br><br>
+<div class="flex-container">
+    <div>
+        <div>
+            <label>Enter code here</label>
+            <div class="textAreaWrapper">
+                <textarea id="codePlaceholder" title="Enter code here"></textarea>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <label>Parsed code here</label>
+            <div class="textAreaWrapper">
+                <div id="finalCodeOutput"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <button id="codeSubmissionButton">Parse code</button>
+</div>
+<!-- <tr>
+    <td>
+        <div>
+            <label>Enter code here</label>
+        </div>
+    </td>
+    <td>
+        <div>
+            <label>Parsed code here</label>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="textAreaWrapper">
+            <textarea id="codePlaceholder" title="Enter code here"></textarea>
+        </div>
+    </td>
+    <td>
+        <div class="textAreaWrapper">
+                <div id="transformedCode"></div>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div>
+            <button id="codeSubmissionButton">Parse code</button>
+        </div>
+    </td>
+    <td>
+    </td>
+</tr>
+</table> -->
+
+<script src="dist/bundle.js"></script>
+</body>
+</html>
